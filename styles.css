@@ -1,0 +1,881 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+p {
+    font-size: 1.4rem;
+}
+
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: whitesmoke;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #fff;
+    padding: 18px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+}
+header img {
+    width: auto;
+    height: 60px;
+}
+
+/* Estilos para el menú de navegación */
+.menu-container {
+    position: relative;
+}
+.menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+/* Estilos para el icono de menú */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+#menu-toggle {
+    display: none;
+}
+
+nav ul.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul.menu li {
+    margin-right: 20px;
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 24px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.whatsapp-button img {
+    width: 84px;
+    height: 84px;
+    opacity: 0.7;
+}
+.whatsapp-button img:hover {
+    opacity: 1;
+}
+
+/* Sección del héroe */
+
+.contactofondo {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 32px;
+}
+.contactofondo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+    filter: brightness(0.7);   
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    padding: 80px 20px;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.4)), url('./img/fondo-inicio.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+
+.hero h1 {
+    margin: 120px;
+    color: #fff;
+    width: 60vw;
+    text-align: left;
+
+}
+.propuestah2 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 64px;
+}
+.propuestaValor h3 {
+    text-align: center;
+    margin: 32px;
+    padding: 24px;
+    width: 92vw;
+    font-style: italic;
+}
+
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Sección de valores */
+.valores {
+    background-color: whitesmoke;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.valoresContenedor {
+    display: flex;
+    justify-content: space-between;
+}
+.valores h2, .valores h3 {
+    color: #333;
+}
+
+.valores h3 {
+    margin-top: 20px;
+}
+.valores h2 {
+    text-align: center;
+    padding: 32px;
+}
+
+.valores img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.valores p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+.valorDiv {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.valorDiv h3 {
+    color: #333;
+}
+
+.valorDiv img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.valorDiv p {
+    color: #555;
+    font-size: 1em;
+}
+
+/* Sección de clientes */
+.clientes {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+.clientes h2 {
+    margin-bottom: 20px;
+}
+.card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 32px;
+}
+.contact-info {
+    background-color: #f8f8f8; 
+    color: #333; 
+    padding: 40px;
+    text-align: center;
+}
+.contactInfoContenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorInfoDentro {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12px;
+    align-items: center;
+}
+.contactInfoContenedor h2 {
+    margin-bottom: 10px;
+}
+
+.contactInfoContenedor h3 {
+    margin-top: 20px;
+}
+
+.contactInfoContenedor img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+.contactInfoContenedor p {
+    margin: 0;
+}
+.contactInfoContenedor h2 {
+    margin-bottom: 5px;
+}
+
+/* PAGINA SERVICIOS */
+.contenedorServicios {
+    padding: 40px 20px;
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.servicios {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 32px;
+    text-align: center;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.servicios h1 {
+    width: 50vw;
+}
+
+.servicios img {
+    margin: 12px;
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+#troquelado, #soldadura {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+}
+#disenoMatrices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+#disenoMatrices img {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    object-fit: cover;
+    margin: 12px;
+}
+.servicios h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.servicios p {
+    color: #555;
+}
+/* 
+PAGINA QUIENES SOMOS */
+.nosotros {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+.quienesSomos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #ddd;
+}
+.quienesSomos img {
+    position: relative;
+    width: 100%;
+    height: 768px;
+    opacity: 0.4;
+}
+
+.quienesSomos img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url('./img/quienesSomosfondo.jpg');
+    background-size: cover;
+
+}
+
+.quienesSomos p {
+   position: absolute;
+   width: 70vw;
+   top: 130px;
+   z-index: 1; 
+}
+.nosotros h1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    z-index: 2;
+}
+
+.nosotros p {
+    margin-top: 20px;
+    z-index: 2;
+}
+.nosotros .h1somos {
+    font-size: 2rem;
+    position: absolute;
+    color: #ddd;
+    top: 250px;
+}
+/* Contenedor Misión y Visión */
+.contenedorMisionVision {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    z-index: 2;
+    margin: 40px;
+    padding: 32px;
+
+}
+
+/* Misión y Visión */
+.misionVision {
+    width: 40%;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.misionVision h2, .misionVision p {
+    color: #333;
+    width: 60%;
+}
+.misionVision p {
+    font-size: 1.2rem;
+}
+
+.misionVision img {
+    width: 80px;
+    height: 80px;
+    margin: 20px 0;
+}
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+.contact-info iframe {
+    border: none;
+}
+.mapa {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+/* 
+HISTORIA  */
+
+/* Estilos generales */
+.historiaContenedor {
+    padding: 12px;
+    background-color: whitesmoke;
+    color: #333;
+    text-align: center;
+    margin-bottom: 32px;
+    border-radius: 30%;
+    border: #555;
+}
+.historiaydescripcion {
+    margin: 20px;
+    display: grid;
+    justify-items: center;
+}
+
+.historiaContenedor h1 {
+    color: #333;
+}
+
+.historiaContenedor p {
+    margin: 20px;
+    width: 70vw;
+    font-size: 16px;
+}
+.equipocompleto {
+    padding: 50px 0;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background-color: whitesmoke;
+    flex-direction: column;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 32px;
+}
+
+.galeria {
+    margin: 24px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 87vw;
+    height: auto;
+}
+.galeria img {
+    margin: 5px;
+    width: 300px;
+    flex-grow: 1;
+    opacity: .8;
+    object-fit: cover;
+    transition: .5s ease;
+}
+.galeria img:hover {
+    cursor: crosshair;
+    width: 600px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+/* Menús desplegables */
+.menu-desplegable {
+    margin: 20px;
+}
+
+.menu-desplegable input {
+    display: none;
+}
+
+.menu-desplegable label {
+    width: 100%;
+    display: block;
+    padding: 12px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-desplegable .contenido-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.menu-desplegable input:checked + label {
+    background-color: #00214d;
+}
+
+.menu-desplegable input:checked + label + .contenido-menu {
+    max-height: 1000px; /* Ajusta según la altura máxima necesaria */
+}
+
+/* Contenido de cada módulo */
+.contenido-modulo {
+    margin: 20px;
+    width: 100%;
+}
+
+.contenido-modulo img {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    border: 1px solid #ddd; /* Agrega un borde sutil */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.descripcionModulo {
+    color: #555;
+}
+.contenido-menu {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 30px;
+    width: 100%;
+    background-color: #fff; 
+    margin: 12px; 
+}
+/* 
+SECCION DIRECCION ESTRATEGICA */
+.equipo-seccion {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color:#555;
+}
+
+.tarjeta {
+    width: 300px;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: #333;
+    background: #ddd;
+}
+
+.tarjeta h2, .tarjeta p {
+    margin: 0;
+    padding: 10px;
+}
+
+.tarjeta h2 {
+    font-size: 20px;
+}
+
+.tarjeta p {
+    font-size: 16px;
+}
+.tarjeta img {
+    width: 80px;
+    height: 80px;
+    margin: 20px 0;   
+}
+
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 2rem;
+    background-color: #555;
+    color: #f8f8f8;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 60px;
+        padding: 5px;
+    }
+    header img {
+        height: 40px;
+    }
+    nav {
+        height: 30px;
+    }
+    .whatsapp-button {
+        width: 40px;
+        height: 40px;
+    }
+    .whatsapp-button img {
+        width: 50px;
+        height: 50px;
+    }
+    .hero h1 {
+        margin: 50px 10px;
+    }
+    .hero img {
+        max-height: 250px;
+    }
+    .propuestah2 {
+        padding: 32px;
+    }
+    .valoresContenedor {
+        flex-direction: column;
+    }
+    .valorDiv {
+        margin: 20px 0;
+        width: 100%;
+    }
+    .card img {
+        width: 100px;
+        height: 100px;
+        margin: 16px;
+    }
+    .contact-info {
+        display: grid;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+        justify-items: center;
+    }
+    .contenedorInfoDentro {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedorInfoDentro p {
+        width: 50vw;
+    }
+    .mapa {
+        width: 80%;
+        padding: 12px;
+        margin: 12px;
+    }
+    .contactInfoContenedor h3 {
+        margin-top: 10px;
+    }
+}
+/* Media queries para smartphones */
+@media screen and (max-width: 480px) {
+    header {
+        height: 50px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header img {
+        height: 30px;
+        left: 4px;
+    }
+    nav {
+        height: 30px;  
+    }
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    a {
+        margin: 0 4px;
+    }
+    .menu {
+        font-size: 0.6 rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .menu a {
+        font-size: 0.8rem;
+        margin-bottom: 24px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+
+    .whatsapp-button {
+        width: 30px;
+        height: 30px;
+    }
+    .whatsapp-button img {
+        width: 40px;
+        height: 40px;
+    }
+    .hero h1 {
+        margin: 30px 10px;
+        font-size: 1.8rem;
+    }
+    .hero img {
+        max-height: 120px;
+    }
+   .propuestah2 {
+        padding: 12px;
+    }
+    .valoresContenedor {
+        flex-direction: column;
+    }
+    .valorDiv {
+        margin: 10px 0;
+    }
+    .card img {
+        width: 60px;
+        height: 60px;
+        margin: 6px;
+    }
+    
+      .nosotros .h1somos {
+        font-size: 1.2rem;
+        top:82px;
+      }
+    
+      .quienesSomos {
+        flex-direction: column;
+        height: 400px;
+      }
+      .quienesSomos p {
+        height: 300px;
+        font-size: 0.8rem;
+      }
+    
+      .quienesSomos img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+      }
+    
+      .contenedorMisionVision {
+        flex-direction: column;
+      }
+    
+      .misionVision {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    
+      .misionVision h2,
+      .misionVision p {
+        width: 100%;
+        text-align: center;
+      }
+    
+      .misionVision img {
+        margin:20px;
+      }
+    .contact-info {
+        font-size: 0.8rem;
+        padding: 16px;
+        gap: 16px;
+        text-align: center;
+        display: grid;
+        justify-items: center;
+    }
+    .contenedorInfoDentro {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedorInfoDentro p {
+        font-size: 0.8 rem;
+        width: 86vw;
+    }
+    .mapa {
+        padding: 8px;
+        margin: 8px;
+    }
+    .servicios img {
+        width: 35vw;
+    }
+    .servicios h2 {
+        font-size: 1.2rem;
+    }
+    .servicios p {
+        font-size: 1rem;
+    }
+    #disenoMatrices img {
+        padding: 6px;
+        margin: 4px;
+    }
+    .contenedorServicios h1 {
+        font-size: 1.4rem;
+        width: 75%;
+    }
+}
