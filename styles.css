@@ -127,6 +127,7 @@ nav ul.menu li a {
 .hero {
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: relative;
     text-align: center;
     padding: 80px 20px;
@@ -146,10 +147,10 @@ nav ul.menu li a {
 }
 
 .hero h1 {
-    margin: 120px;
+    margin: 120px 0 120px 0;
     color: #fff;
-    width: 80%;
     text-align: center;
+    width: 70vw;
 }
 .propuestah2 {
     background-color: #fff;
@@ -416,7 +417,7 @@ PAGINA QUIENES SOMOS */
 .nosotros .h1somos {
     position: absolute;
     color: #ddd;
-    top: 200px;
+    top: 350px;
     font-weight: 600px;
 }
 /* Contenedor Misión y Visión */
@@ -721,6 +722,7 @@ footer {
 @media screen and (max-width: 480px) {
     header {
         height: 50px;
+        margin: 4px;
         padding: 0;
         display: flex;
         justify-content: space-between;
@@ -731,15 +733,12 @@ footer {
         left: 4px;
     }
     nav {
-        height: 30px;  
+        height: 40px;  
     }
     li {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    a {
-        margin: 0 4px;
     }
     .menu {
         font-size: 0.6 rem;
@@ -750,11 +749,9 @@ footer {
         position: relative;
         left: 0;
         width: 100%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     .menu a {
         font-size: 0.8rem;
-        margin-bottom: 24px;
     }
 
     .menu-icon {
@@ -852,6 +849,7 @@ footer {
     .mapa {
         padding: 8px;
         margin: 8px;
+        width: 70vw;
     }
     .servicios img {
         width: 35vw;
@@ -869,5 +867,17 @@ footer {
     .contenedorServicios h1 {
         font-size: 1.4rem;
         width: 75%;
+    }
+    .contactInfoContenedor {
+        padding: 8px;
+    }
+    .contactInfoContenedor h2 {
+        font-size: 1.8rem;
+    }
+    .contactInfoContenedor h3 {
+        font-size: 1.4rem;
+    }
+    .galeria img:hover {
+        width: 300px;
     }
 }
