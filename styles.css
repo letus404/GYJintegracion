@@ -8,8 +8,8 @@ html {
 }
 
 h1 {
-    font-size: 2.5rem;
-}
+    font-size: 2.2rem;
+    }
 h2 {
     font-size: 2rem;
 }
@@ -140,7 +140,7 @@ nav ul.menu li a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.4)), url('./img/fondo-inicio.jpg');
+    background: linear-gradient(rgba(28, 36, 46, 1), rgba(1, 53, 111, 0.4)), url('./img/fondo-inicio.png');
     background-size: cover;
     z-index: -1;
 }
@@ -148,18 +148,18 @@ nav ul.menu li a {
 .hero h1 {
     margin: 120px;
     color: #fff;
-    width: 60vw;
-    text-align: left;
-
+    width: 80%;
+    text-align: center;
 }
 .propuestah2 {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 64px;
+    padding: 68px;
 }
 .propuestaValor h3 {
     text-align: center;
@@ -167,6 +167,7 @@ nav ul.menu li a {
     padding: 24px;
     width: 92vw;
     font-style: italic;
+    font-weight: 800;
 }
 
 
@@ -199,6 +200,7 @@ nav ul.menu li a {
 .valores h2 {
     text-align: center;
     padding: 32px;
+    font-size: 1.8rem;
 }
 
 .valores img {
@@ -273,6 +275,9 @@ nav ul.menu li a {
     align-items: center;
     justify-content: center;
 }
+.contactInfoContenedor h3 {
+    font-size: 1.6rem;
+}
 .contenedorInfoDentro {
     display: flex;
     flex-wrap: wrap;
@@ -281,10 +286,6 @@ nav ul.menu li a {
 }
 .contactInfoContenedor h2 {
     margin-bottom: 10px;
-}
-
-.contactInfoContenedor h3 {
-    margin-top: 20px;
 }
 
 .contactInfoContenedor img {
@@ -378,8 +379,8 @@ PAGINA QUIENES SOMOS */
 .quienesSomos img {
     position: relative;
     width: 100%;
-    height: 768px;
     opacity: 0.4;
+    object-fit: cover;
 }
 
 .quienesSomos img::before {
@@ -389,7 +390,7 @@ PAGINA QUIENES SOMOS */
     height: 100%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url('./img/quienesSomosfondo.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),url('./img/quienesSomosfondo.jpg');
     background-size: cover;
 
 }
@@ -397,7 +398,7 @@ PAGINA QUIENES SOMOS */
 .quienesSomos p {
    position: absolute;
    width: 70vw;
-   top: 130px;
+   top: 300px;
    z-index: 1; 
 }
 .nosotros h1 {
@@ -413,10 +414,10 @@ PAGINA QUIENES SOMOS */
     z-index: 2;
 }
 .nosotros .h1somos {
-    font-size: 2rem;
     position: absolute;
     color: #ddd;
-    top: 250px;
+    top: 200px;
+    font-weight: 600px;
 }
 /* Contenedor Misión y Visión */
 .contenedorMisionVision {
@@ -476,12 +477,10 @@ HISTORIA  */
 /* Estilos generales */
 .historiaContenedor {
     padding: 12px;
-    background-color: whitesmoke;
+    background-color: #cfd5d6;
     color: #333;
     text-align: center;
     margin-bottom: 32px;
-    border-radius: 30%;
-    border: #555;
 }
 .historiaydescripcion {
     margin: 20px;
@@ -500,14 +499,11 @@ HISTORIA  */
 }
 .equipocompleto {
     padding: 50px 0;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    background-color: whitesmoke;
     flex-direction: column;
     display: flex;
     justify-items: center;
     align-items: center;
-    margin: 32px;
+    margin: 32px 0 32px 0;
 }
 
 .galeria {
@@ -602,7 +598,6 @@ SECCION DIRECCION ESTRATEGICA */
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    background-color:#555;
 }
 
 .tarjeta {
@@ -721,9 +716,6 @@ footer {
         padding: 12px;
         margin: 12px;
     }
-    .contactInfoContenedor h3 {
-        margin-top: 10px;
-    }
 }
 /* Media queries para smartphones */
 @media screen and (max-width: 480px) {
@@ -807,7 +799,7 @@ footer {
     
       .quienesSomos {
         flex-direction: column;
-        height: 400px;
+
       }
       .quienesSomos p {
         height: 300px;
