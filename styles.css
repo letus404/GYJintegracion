@@ -115,13 +115,15 @@ nav ul.menu li a {
 
 .contactofondo {
     width: 100%;
-    height: 500px;
+    height: 622px;
     margin-bottom: 32px;
 }
 .contactofondo img {
     width: 100%;
     height: 100%;
-    object-fit: cover ;
+    background-size: cover;
+    background-position: center bottom;
+    object-fit: cover;
     filter: brightness(0.7);   
 }
 .hero {
@@ -717,6 +719,30 @@ footer {
         padding: 12px;
         margin: 12px;
     }
+    .contenido-modulo {
+        margin: 10px;
+        width: 60%;
+    }
+    .contenido-modulo img {
+        width: 200px;
+        height: 200px;
+        margin: 5px;
+        }
+    .contenido-menu {
+        display: grid;
+        justify-items: center;
+    }
+    .historiaContenedor p {
+        width: 100%;
+        margin: 5px;
+    }
+    .menu-desplegable {
+        margin: 20px 0;
+    }
+    .nosotros .h1somos {
+        top: 170px;
+        font-size: 1.6rem;
+    }
 }
 /* Media queries para smartphones */
 @media screen and (max-width: 480px) {
@@ -836,6 +862,10 @@ footer {
         display: grid;
         justify-items: center;
     }
+    .contactInfoContenedor {
+        display: grid;
+        justify-items: center;
+    }
     .contenedorInfoDentro {
         display: flex;
         flex-wrap: wrap;
@@ -879,5 +909,22 @@ footer {
     }
     .galeria img:hover {
         width: 300px;
+    }
+    .contenido-modulo {
+        margin: 10px;
+        width: 60%;
+    }
+    .contenido-modulo img {
+        width: 200px;
+        height: 200px;
+        margin: 5px;
+        }
+    .contenido-menu {
+        display: grid;
+        justify-items: center;
+    }
+    .historiaContenedor p {
+        width: 100%;
+        margin: 5px;
     }
 }
