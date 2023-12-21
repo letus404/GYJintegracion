@@ -19,6 +19,10 @@ h3 {
 p {
     font-size: 1.4rem;
 }
+a {
+    text-decoration: none;
+    color: #555;
+}
 
 
 /* Estilos generales para el cuerpo de la página */
@@ -53,16 +57,17 @@ header img {
     list-style: none;
     margin: 0;
     padding: 0;
+    gap: 1rem;
 }
 .menu li {
     text-align: center;
-    margin: 10px 0;
 }
 
 .menu a {
     text-decoration: none;
     color: #333;
     font-size: 1.2rem;
+    margin: 4px;
 }
 
 /* Estilos para el icono de menú */
@@ -78,16 +83,17 @@ header img {
 nav ul.menu {
     list-style-type: none;
     display: flex;
-}
-
-nav ul.menu li {
-    margin-right: 20px;
+    gap: 1rem;
 }
 
 nav ul.menu li a {
     text-decoration: none;
     color: #333;
     font-weight: 600;
+}
+.abrir-menu,
+.cerrar-menu {
+    display: none;
 }
 
 .whatsapp-button {
@@ -184,9 +190,15 @@ nav ul.menu li a {
 
 /* Sección de valores */
 .valores {
+    display: grid;
+    justify-items: center;
     background-color: whitesmoke;
     padding: 40px 20px;
     color: #333;
+}
+.valores h3 {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
 }
 
 .valoresContenedor {
@@ -196,13 +208,9 @@ nav ul.menu li a {
 .valores h2, .valores h3 {
     color: #333;
 }
-
-.valores h3 {
-    margin-top: 20px;
-}
 .valores h2 {
     text-align: center;
-    padding: 32px;
+    margin-top: 32px;
     font-size: 1.8rem;
 }
 
@@ -210,7 +218,6 @@ nav ul.menu li a {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border-radius: 50%;
 }
 
 .valores p {
@@ -235,7 +242,6 @@ nav ul.menu li a {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border-radius: 50%;
     margin: 20px 0;
 }
 
@@ -261,9 +267,8 @@ nav ul.menu li a {
     align-items: center;
 }
 .card img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+    width: 150px;
+    height: 150px;
     margin: 32px;
 }
 .contact-info {
@@ -332,7 +337,7 @@ nav ul.menu li a {
 
 .servicios img {
     margin: 12px;
-    width: 50%;
+    width: 70vw;
     height: auto;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -345,12 +350,13 @@ nav ul.menu li a {
     margin: 12px;
 }
 #disenoMatrices {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
 }
 #disenoMatrices img {
-    width: 100%;
+    width: 32vw;
     height: auto;
     padding: 20px;
     object-fit: cover;
@@ -638,10 +644,15 @@ SECCION DIRECCION ESTRATEGICA */
 
 /* Pie de página */
 footer {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
     padding: 20px;
     background-color: #333;
     color: #fff;
+}
+footer p {
+    font-size: 1rem;
 }
 #scroll-to-top {
     position: fixed;
@@ -660,13 +671,9 @@ footer {
 @media screen and (max-width: 768px) {
     header {
         height: 60px;
-        padding: 5px;
     }
     header img {
         height: 40px;
-    }
-    nav {
-        height: 30px;
     }
     .whatsapp-button {
         width: 40px;
@@ -743,20 +750,24 @@ footer {
         top: 170px;
         font-size: 1.6rem;
     }
+    #disenoMatrices img {
+        width: 20vw;
+    }
 }
 /* Media queries para smartphones */
 @media screen and (max-width: 480px) {
     header {
+        width: 100vw;
         height: 50px;
-        margin: 4px;
-        padding: 0;
+        padding: 12px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: fixed;
+        z-index: 100;
     }
     header img {
         height: 30px;
-        left: 4px;
     }
     nav {
         height: 40px;  
@@ -783,6 +794,7 @@ footer {
     .menu-icon {
         display: block;
     }
+    
 
 
     .whatsapp-button {
@@ -891,6 +903,7 @@ footer {
         font-size: 1rem;
     }
     #disenoMatrices img {
+        width: 20vw;
         padding: 6px;
         margin: 4px;
     }
