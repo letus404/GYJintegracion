@@ -750,9 +750,6 @@ footer p {
         top: 170px;
         font-size: 1.6rem;
     }
-    #disenoMatrices img {
-        width: 20vw;
-    }
 }
 /* Media queries para smartphones */
 @media screen and (max-width: 480px) {
@@ -894,7 +891,7 @@ footer p {
         width: 70vw;
     }
     .servicios img {
-        width: 35vw;
+        width: 70vw;
     }
     .servicios h2 {
         font-size: 1.2rem;
@@ -903,7 +900,7 @@ footer p {
         font-size: 1rem;
     }
     #disenoMatrices img {
-        width: 20vw;
+        width: 70vw;
         padding: 6px;
         margin: 4px;
     }
