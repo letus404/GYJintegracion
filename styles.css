@@ -170,6 +170,9 @@ nav ul.menu li a {
     justify-content: center;
     padding: 68px;
 }
+.propuestah2 img {
+    border-radius: 32px;
+}
 .propuestaValor h3 {
     text-align: center;
     margin: 32px;
@@ -250,6 +253,32 @@ nav ul.menu li a {
     font-size: 1em;
 }
 
+/* SECCION NUESTROS SERVICIOS */
+
+.menuServiciosIndex {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin: 0px 154px 62px 257px;
+    align-items: center;
+    width: 70%;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.menuServiciosIndex ul {
+    list-style: none;
+    gap: 12px;
+}
+.menuServiciosIndex a {
+    font-size: 1.6rem;
+    font-weight: 600px;
+}
+.menuServiciosIndex a:hover {
+    color: #1686c5;
+}
+
 /* Sección de clientes */
 .clientes {
     text-align: center;
@@ -272,15 +301,27 @@ nav ul.menu li a {
     margin: 32px;
 }
 .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #f8f8f8; 
     color: #333; 
     padding: 40px;
+    text-align: left;
+    gap: 24px;
+}
+.contact-info img {
+    width: 300px;
+    height: 300px;
+}
+#contact-infoContacto {
     text-align: center;
+    align-items: center;
 }
 .contactInfoContenedor {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 .contactInfoContenedor h3 {
@@ -344,7 +385,6 @@ nav ul.menu li a {
 }
 #troquelado, #soldadura {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 12px;
@@ -534,7 +574,7 @@ HISTORIA  */
 }
 .galeria img:hover {
     cursor: crosshair;
-    width: 600px;
+    width: 350px;
     opacity: 1;
     filter: contrast(120%);
 }
