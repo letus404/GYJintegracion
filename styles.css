@@ -476,7 +476,6 @@ PAGINA QUIENES SOMOS */
     z-index: 2;
     margin: 40px;
     padding: 32px;
-
 }
 
 /* Misión y Visión */
@@ -497,6 +496,7 @@ PAGINA QUIENES SOMOS */
 }
 .misionVision p {
     font-size: 1.2rem;
+    text-align: justify;
 }
 
 .misionVision img {
