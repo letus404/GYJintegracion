@@ -251,6 +251,7 @@ nav ul.menu li a {
 .valorDiv p {
     color: #555;
     font-size: 1em;
+    text-align: justify;
 }
 
 /* SECCION NUESTROS SERVICIOS */
@@ -259,6 +260,7 @@ nav ul.menu li a {
     display: flex;
     justify-content: center;
     gap: 150px;
+    padding: 18px;
     margin: 0px 154px 62px 257px;
     align-items: center;
     width: 70%;
