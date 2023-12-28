@@ -11,7 +11,7 @@ h1 {
     font-size: 2.2rem;
     }
 h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 h3 {
     font-size: 1.8rem;
@@ -474,7 +474,6 @@ PAGINA QUIENES SOMOS */
 .contenedorMisionVision {
     display: flex;
     justify-content: space-around;
-    margin-top: 40px;
     z-index: 2;
     margin: 40px;
     padding: 32px;
@@ -482,29 +481,30 @@ PAGINA QUIENES SOMOS */
 
 /* Misión y Visión */
 .misionVision {
-    width: 40%;
-    padding: 20px;
+    width: 350px;
+    padding: 16px;
     background-color: #f8f8f8;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: grid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     justify-content: center;
     justify-items: center;
 }
 
 .misionVision h2, .misionVision p {
     color: #333;
-    width: 60%;
+}
+.misionVision h2 {
+    margin: 5px;
 }
 .misionVision p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: justify;
 }
 
 .misionVision img {
     width: 80px;
     height: 80px;
-    margin: 20px 0;
+    
 }
 /* Pie de página */
 footer {
@@ -652,14 +652,14 @@ SECCION DIRECCION ESTRATEGICA */
 }
 
 .tarjeta {
-    width: 300px;
+    width: 320px;
     height: 400px; /* Ajusta la altura según tus necesidades */
     background-size: cover;
     background-position: center;
-    padding: 20px;
+    padding: 10px;
     margin: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     text-align: center;
     color: #333;
     background: #ddd;
@@ -671,7 +671,7 @@ SECCION DIRECCION ESTRATEGICA */
 }
 
 .tarjeta h2 {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .tarjeta p {
@@ -897,6 +897,9 @@ footer p {
       .misionVision {
         width: 100%;
         margin-bottom: 20px;
+      }
+      .misionVision p {
+        font-size: 0.8rem;
       }
     
       .misionVision h2 {
