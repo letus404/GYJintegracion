@@ -676,6 +676,7 @@ SECCION DIRECCION ESTRATEGICA */
 
 .tarjeta p {
     font-size: 16px;
+    text-align: justify;
 }
 .tarjeta img {
     width: 80px;
@@ -898,11 +899,11 @@ footer p {
         margin-bottom: 20px;
       }
     
-      .misionVision h2,
-      .misionVision p {
+      .misionVision h2 {
         width: 100%;
         text-align: center;
       }
+
     
       .misionVision img {
         margin:20px;
