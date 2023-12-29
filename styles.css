@@ -14,7 +14,7 @@ h2 {
     font-size: 1.8rem;
 }
 h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 p {
     font-size: 1.4rem;
@@ -162,7 +162,6 @@ nav ul.menu li a {
 }
 .propuestah2 {
     background-color: #fff;
-    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
@@ -174,10 +173,8 @@ nav ul.menu li a {
     border-radius: 32px;
 }
 .propuestaValor h3 {
-    text-align: center;
-    margin: 32px;
-    padding: 24px;
-    width: 92vw;
+    text-align: left;
+    width: 84vw;
     font-style: italic;
     font-weight: 800;
 }
@@ -195,7 +192,7 @@ nav ul.menu li a {
 .valores {
     display: grid;
     justify-items: center;
-    background-color: whitesmoke;
+    background-color: #cfd5d6;
     padding: 40px 20px;
     color: #333;
 }
@@ -258,27 +255,30 @@ nav ul.menu li a {
 
 .menuServiciosIndex {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    gap: 150px;
-    padding: 18px;
-    margin: 0px 154px 62px 257px;
+    gap: 32px;
+    padding: 32px;
     align-items: center;
-    width: 70%;
-    height: 400px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background-color: #f8f8f8;
 }
 .menuServiciosIndex ul {
     list-style: none;
-    gap: 12px;
+    display: flex;
+}
+.menuServiciosIndex li {
+    margin: 12px;
+    text-align: center;
 }
 .menuServiciosIndex a {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 600px;
+    text-align: center;
 }
 .menuServiciosIndex a:hover {
-    color: #1686c5;
+    border-bottom: #1686c5 1px solid;
 }
 
 /* Sección de clientes */
@@ -327,7 +327,7 @@ nav ul.menu li a {
     justify-content: center;
 }
 .contactInfoContenedor h3 {
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 .contenedorInfoDentro {
     display: flex;
@@ -337,6 +337,7 @@ nav ul.menu li a {
 }
 .contactInfoContenedor h2 {
     margin-bottom: 10px;
+    font-size: 1.4rem;
 }
 
 .contactInfoContenedor img {
@@ -482,7 +483,7 @@ PAGINA QUIENES SOMOS */
 /* Misión y Visión */
 .misionVision {
     width: 350px;
-    padding: 16px;
+    padding: 26px;
     background-color: #f8f8f8;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -563,20 +564,18 @@ HISTORIA  */
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 87vw;
+    width: 70vw;
     height: auto;
 }
 .galeria img {
     margin: 5px;
     width: 300px;
-    flex-grow: 1;
     opacity: .8;
     object-fit: cover;
     transition: .5s ease;
 }
 .galeria img:hover {
     cursor: crosshair;
-    width: 350px;
     opacity: 1;
     filter: contrast(120%);
 }
@@ -607,7 +606,7 @@ HISTORIA  */
 }
 
 .menu-desplegable input:checked + label {
-    background-color: #00214d;
+    background-color: #1686c5;
 }
 
 .menu-desplegable input:checked + label + .contenido-menu {
@@ -630,7 +629,8 @@ HISTORIA  */
 }
 
 .descripcionModulo {
-    color: #555;
+    color: #333;
+    font-weight: 800;
 }
 .contenido-menu {
     text-align: center;
